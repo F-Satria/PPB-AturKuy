@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/itemPreview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/research" />
+
+    <TextView
+        android:id="@+id/taskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/itemPreview"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/itemPreview"
+        android:layout_toRightOf="@id/itemPreview"
+        android:gravity="center"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/itemPreview"
+        app:layout_constraintTop_toTopOf="@+id/itemPreview"
+        tools:text="Riset StartUp" />
+
+    <TextView
+        android:id="@+id/taskDeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskName"
+        android:layout_marginStart="-78dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/taskName"
+        android:layout_toRightOf="@id/itemPreview"
+        android:textSize="12sp"
+        tools:text="7 Maret 2020" />
+
+    <TextView
+        android:id="@+id/taskUrgensi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskDeadline"
+        android:layout_marginStart="-53dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@id/taskDeadline"
+        android:layout_toRightOf="@id/itemPreview"
+        android:text="Penting"
+        android:textSize="12sp" />
+
+</RelativeLayout>
